@@ -17,7 +17,7 @@ mixed = [1, "文本", True]    # 可以混放不同类型（初学时尽量别�
 print("完整列表:", fruits)
 print("第一个:", fruits[0])
 print("最后一个:", fruits[-1])
-print("切片 fruits[0:2]:", fruits[0:2])
+print("切片 fruits[0:2]:", fruits[0:2]) 
 print("长度:", len(fruits))
 
 # ---------- 2. 修改某一个位置 ----------

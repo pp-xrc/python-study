@@ -10,7 +10,7 @@
 """
 
 # ---------- 1. 怎么写字符串 ----------
-s1 = '单引号也可以'
+s1 = "单引号也可以"
 s2 = "双引号也可以"
 s3 = "里面有'单引号'时，外层用双引号更方便"
 s4 = """三引号可以
@@ -30,11 +30,12 @@ print("最后一个字符 word[-1] =", word[-1])
 print("长度 len(word) =", len(word))
 
 # ---------- 3. 切片：[start:stop:step]，含头不含尾 ----------
-print("word[0:2] =", word[0:2])     # Py，取到下标 2 之前
-print("word[2:] =", word[2:])       # thon，从 2 一直到末尾
-print("word[:4] =", word[:4])       # Pyth，从头到下标 4 之前
-print("word[::2] =", word[::2])     # Pto，每隔一个取一个
-print("word[::-1] =", word[::-1])   # 步长为 -1，相当于反转
+print("word[0:2] =", word[0:2])  # Py，取到下标 2 之前
+print("word[2:] =", word[2:])  # thon，从 2 一直到末尾
+print("word[:4] =", word[:4])  # Pyth，从头到下标 4 之前
+print("word[::2] =", word[::2])  # Pto，从左往右，每次跳 2
+print("word[::-1] =", word[::-1])  # 步长为 -1，相当于反转 从右往左，每次跳 1
+print("word[::-2] =", word[1::2])  # 从下标 1 开始，每次跳 2
 
 # ---------- 4. 字符串不可变：不能 word[0] = "J" ----------
 # 想改内容，只能生成一个新字符串
@@ -47,9 +48,9 @@ print("strip 去两端空白:", msg.strip())
 print("lower 变小写:", msg.lower())
 print("upper 变大写:", msg.upper())
 print("replace 替换:", msg.replace("Python", "World"))
-print("split 按空格切成列表:", "a,b,c".split(","))
+print("split 按空格切成列表:", "a b c".split())
 print("join 把列表拼回去:", "-".join(["a", "b", "c"]))
-print("find 找子串下标:", "banana".find("na"))   # 找不到返回 -1
+print("find 找子串下标:", "banana".find("na"))  # 找不到返回 -1
 print("startswith:", "demo.py".startswith("demo"))
 print("isdigit 是否全是数字:", "123".isdigit())
 
